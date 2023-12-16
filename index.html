@@ -15,8 +15,9 @@
     <h1 class="tittle">We are launching <span>soon!</span></h1>
     <p class="subtittle">Subscribe and get notified</p>
 
-    <form action="" class="form">
-      <input type="email" name="email" id="email" placeholder="Your email address">
+    <form action="" class="form" id="form">
+      <input type="email" name="email" id="email" placeholder="Your email address" onblur="validateEmail()" onfocus="redefinirMsg()">
+      <small id="textEmail"></small>
       <button type="submit" class="button">Notyfy Me</button>
     </form>
 
@@ -35,6 +36,6 @@
     </footer>
       
   </div>
-
+<script src="scipt.js"></script>
 </body>
 </html>
