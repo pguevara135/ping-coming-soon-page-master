@@ -9,41 +9,104 @@
 body {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 20px;
-    height: 100vh;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
 }
 
 .container {
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     text-align: center;
+    padding: 5rem 2rem;
+    box-sizing: border-box;
+}
+ .logo {
+    margin-bottom: 2rem;
+    width: 60px;
+ }
+
+ .tittle {
+    font-size: 1.5rem;
+    color:  #969696;
+    font-weight: 500;
+    margin-bottom: 1rem;
+ }
+
+ .tittle span {
+    color:  hsl(209, 33%, 12%);
+    font-weight: 700;
+ }
+
+ .subtittle {
+    color: #969696;
+    font-size: .8rem;
+    font-weight: 700;
+    margin-bottom: 2em;
+ }
+
+ .form {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5rem 1rem 1rem 1rem;
-}
+    margin-bottom: 5rem;
+ }
 
-.ping {
-    width: 90%;
-    height: 100%;
-    border: 2px solid black;
-}
+ .form input[type="email"] {
+    width: 100%;
+    border: 2px solid #c2d3ff;
+    height: 3rem;
+    border-radius: 50px;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+ }
 
-.ping h2 {
-    
-    text-transform: uppercase;
-    font-size: 1.5rem;
-}
+ .form input[type="email"]::placeholder {
+    color: #c2d3ff;
+    font-family: 'Libre Franklin', sans-serif;
+ }
 
-.ping h1 {
-    margin: 3rem 0;
-    color: hsl(0, 0%, 59%);
-    font-weight: 300;
-    font-size: 1.7rem;
-}
+ .button {
+    color: #fff;
+    background-color: #4f7df3;
+    height: 3rem;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 0 20px hsla(223, 87%, 63%, 0.425);
+    font-size: 0.9rem;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 500;
+ }
 
-.ping h1 span {
-    color: rgba(0, 0, 0, 0.836);
-    font-weight: 700;
-}
+ .footer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+    text-align: center;
+ }
+
+ .icons {
+    width: 100%;
+    }
+
+ .icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    padding: .3rem;
+    border: 1px solid #c2d3ff6c;
+    margin: 1rem .3rem;
+ }
+
+ .copyright {
+    color: #969696;
+    font-size: .7rem;
+ }
